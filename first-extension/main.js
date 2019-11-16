@@ -7,7 +7,7 @@ var allImages = document.getElementsByTagName('img');
 //console.log(allImages);
 
 for(var i = 0; i < allImages.length; i++){
-    allImages[i].src = 'https://placekitten.com/'+allImages[i].width+'/'+allImages[i].height+'';
+    allImages[i].setAttribute('src', 'https://placekitten.com/'+allImages[i].width+'/'+allImages[i].height);
 }
 
 //document.getElementsByTagName('h1')[0].innerHTML = 'Sherri Was Here.';
