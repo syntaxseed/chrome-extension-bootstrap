@@ -6,8 +6,12 @@
 var allImages = document.getElementsByTagName('img');
 //console.log(allImages);
 
-for(var i = 0; i < allImages.length; i++){
-    allImages[i].setAttribute('src', 'https://placekitten.com/'+allImages[i].width+'/'+allImages[i].height);
+for (var i = 0; i < allImages.length; i++) {
+    allImages[i].addEventListener('mouseover', function () {
+        //console.log(this);
+        this.setAttribute('src', 'https://placekitten.com/'+this.width+'/'+this.height);
+    });
+    //allImages[i].setAttribute('src', 'https://placekitten.com/'+allImages[i].width+'/'+allImages[i].height);
 }
 
 //document.getElementsByTagName('h1')[0].innerHTML = 'Sherri Was Here.';
