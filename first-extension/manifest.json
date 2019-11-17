@@ -1,8 +1,8 @@
 {
-    "name": "Sherri's Awesome Extension",
+    "name": "Chrome Extension Bootstrap",
     "author": "Sherri Wheeler (@SyntaxSeed)",
-    "version": "1.5",
-    "description": "Chrome extension lesson from Ladies Learning Code.",
+    "version": "0.0.5",
+    "description": "Chrome extension starter bootstrap from SyntaxSeed.",
     "manifest_version": 2,
     "permissions": [
         "activeTab",
@@ -23,6 +23,15 @@
         }
     },
     "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "common.js"
+            ],
+            "run_at": "document_start"
+        },
         {
             "matches": [
                 "<all_urls>"

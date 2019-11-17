@@ -2,26 +2,37 @@
  * Main behaviour of extension. Executes on click of extension button.
  */
 
-// Replace all images with pics of cats.
-var allImages = document.getElementsByTagName('img');
-//console.log(allImages);
 
+// EXAMPLE 1: Replace all images with pictures of cats:
+
+var allImages = document.getElementsByTagName('img');
 for (var i = 0; i < allImages.length; i++) {
+    allImages[i].setAttribute('src', 'https://placekitten.com/'+allImages[i].width+'/'+allImages[i].height);
+    // Instead of above, use the following to remove images on mouse-over.
+    /*
     allImages[i].addEventListener('mouseover', function () {
-        //console.log(this);
-        this.setAttribute('src', 'https://placekitten.com/'+this.width+'/'+this.height);
+        this.setAttribute('style', 'visibility: hidden');
     });
-    //allImages[i].setAttribute('src', 'https://placekitten.com/'+allImages[i].width+'/'+allImages[i].height);
+    */
 }
 
-//document.getElementsByTagName('h1')[0].innerHTML = 'Sherri Was Here.';
+
+// EXAMPLE 2: Call a global function from the common.js file:
+
+//changeBackground('green');
 
 
 
-// Create a new stylesheet for the page:
+// EXAMPLE 3: Change all headers to a message:
+
+//document.getElementsByTagName('h1')[0].innerHTML = 'SyntaxSeed Was Here';
+
+
+
+// EXAMPLE4: Create a new stylesheet for the page:
+
 /*
 var cssRules = '\
-    body {font-size:3em;} \
     body {transition: transform 3s ease-in; transform: rotate(5deg);} \
 ';
 
