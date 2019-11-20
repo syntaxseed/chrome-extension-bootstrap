@@ -1,4 +1,4 @@
-# Chrome Extension Tutorial
+# Chrome Extension Bootstrap
 
 A generic bootstrap template for creating simple Chrome browser extensions. Also works with Brave browser.
 
@@ -8,10 +8,10 @@ A generic bootstrap template for creating simple Chrome browser extensions. Also
 - main.js = executes when extension icon is clicked.
 - onload.js = executes when any tab finishes loading.
 
-## Use
+## How To Use
 
 1. In the Chrome extensions tab under `Settings`, turn on `Developer Mode`.
-1. Install extension via the `Load unpacked` button. Select the 'first-extension' directory and load that.
+1. Install extension via the `Load unpacked` button. Select the `extension-demo` directory and load that.
 
 
 ## Reference
